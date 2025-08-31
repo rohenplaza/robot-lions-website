@@ -35,6 +35,9 @@ class TabManager {
         this.removeActiveStates();
         this.showTab(targetTab);
         this.setActiveState(targetTab);
+        
+        // Prevent scrolling and keep header visible
+        window.scrollTo(0, 0);
     }
 
     hideAllTabs() {
