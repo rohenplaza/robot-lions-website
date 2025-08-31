@@ -281,7 +281,7 @@ main {
 }
 
 .entry-header h3 {
-    color: var(--primary-blue);
+    color: var(--dark-gray);
     font-size: 1.4rem;
     margin: 0;
 }
