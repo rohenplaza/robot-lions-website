@@ -317,6 +317,15 @@ main {
     left: 0;
 }
 
+/* Journal Image Styles */
+.journal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
 /* Footer */
 footer {
     background: var(--dark-gray);
@@ -367,6 +376,10 @@ footer p {
     .entry-header {
         flex-direction: column;
         align-items: flex-start;
+    }
+    
+    .journal-image {
+        border-radius: 6px;
     }
 }
 
