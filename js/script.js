@@ -305,6 +305,13 @@ document.addEventListener('DOMContentLoaded', () => {
     new ScrollManager();
     new AnimationManager();
     new UtilityManager();
+
+    // Initialize Schedule Manager if config is available
+    if (typeof SCHEDULE_CONFIG !== 'undefined') {
+        new ScheduleManager(SCHEDULE_CONFIG);
+    } else {
+        console.warn('Schedule config not found. Please create js/config.js from js/config.example.js');
+    }
 });
 
 window.addEventListener('load', () => {

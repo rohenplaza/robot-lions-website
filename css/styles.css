@@ -487,3 +487,75 @@ footer p {
         padding: 2rem 1rem;
     }
 }
+
+/* ==========================
+   Schedule Loading States
+   ========================== */
+
+.schedule-loading {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--gray);
+}
+
+.spinner {
+    border: 4px solid var(--light-gray);
+    border-top: 4px solid var(--primary-blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Schedule Error States */
+.schedule-error {
+    background: #FFF3CD;
+    border: 1px solid #FFC107;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.schedule-error h3 {
+    color: #856404;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.schedule-error p {
+    color: #856404;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Schedule Warning Banner */
+.schedule-warning {
+    background: #FFF3CD;
+    border: 1px solid #FFC107;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.schedule-warning p {
+    color: #856404;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* No Events Message */
+.no-events {
+    text-align: center;
+    padding: 2rem;
+    color: var(--gray);
+    font-style: italic;
+}
