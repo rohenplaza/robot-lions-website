@@ -312,6 +312,13 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.warn('Schedule config not found. Please create js/config.js from js/config.example.js');
     }
+
+    // Initialize Journal Manager if config is available
+    if (typeof JOURNAL_CONFIG !== 'undefined') {
+        new JournalManager(JOURNAL_CONFIG);
+    } else {
+        console.warn('Journal config not found. Please create js/config.js from js/config.example.js');
+    }
 });
 
 window.addEventListener('load', () => {

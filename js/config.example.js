@@ -48,3 +48,21 @@ const SCHEDULE_CONFIG = {
     // Cache duration in milliseconds (300000 = 5 minutes)
     cacheDuration: 300000
 };
+
+const JOURNAL_CONFIG = {
+    // Same API key as schedule
+    apiKey: 'YOUR_GOOGLE_SHEETS_API_KEY_HERE',
+
+    // Same spreadsheet ID (journal entries are in a different sheet)
+    spreadsheetId: 'YOUR_SPREADSHEET_ID_HERE',
+
+    // Range for journal entries (Sheet name + cell range)
+    // Columns: Date, Title, Content, Image URL (optional)
+    journalRange: 'Journal Entries!A2:D',
+
+    // Enable caching
+    cacheEnabled: true,
+
+    // Cache duration in milliseconds (300000 = 5 minutes)
+    cacheDuration: 300000
+};

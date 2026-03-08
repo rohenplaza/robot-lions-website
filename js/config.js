@@ -48,3 +48,21 @@ const SCHEDULE_CONFIG = {
     // Cache duration in milliseconds (300000 = 5 minutes)
     cacheDuration: 300000
 };
+
+const JOURNAL_CONFIG = {
+    // Same API key and spreadsheet as schedule
+    apiKey: 'AIzaSyBVK_uXY9NWf8H8SK_mq-eP4ceHLJ23sEM',
+
+    // Same spreadsheet ID (journal entries are in a different sheet)
+    spreadsheetId: '1wJUpVLdqDfeUheN2frFhH2Y8lJeyioPePf-jaTfvmII',
+
+    // Range for journal entries (Sheet name + cell range)
+    // Columns: Date, Title, Content, Image URL (optional)
+    journalRange: 'Journal Entries!A2:D',
+
+    // Enable caching
+    cacheEnabled: true,
+
+    // Cache duration in milliseconds (300000 = 5 minutes)
+    cacheDuration: 300000
+};

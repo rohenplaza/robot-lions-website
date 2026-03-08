@@ -1,11 +1,15 @@
-# Quick Import Guide - Robot Lions Schedule
+# Quick Import Guide - Robot Lions Schedule & Journal
 
-I've exported your current schedule into two CSV files that you can directly import into Google Sheets!
+I've exported your current schedule and journal into CSV files that you can directly import into Google Sheets!
 
 ## Files Created
 
+**Schedule:**
 - **`upcoming_events.csv`** - Contains 2 upcoming events
 - **`past_events.csv`** - Contains 21 past events
+
+**Journal:**
+- **`journal_entries.csv`** - Contains 19 journal entries
 
 ## How to Import into Google Sheets
 
@@ -58,15 +62,38 @@ I've exported your current schedule into two CSV files that you can directly imp
 
 7. Click **Import data**
 
-### Step 4: Verify the Data
+### Step 4: Import Journal Entries
+
+1. Click the **+** button at the bottom to create another new sheet
+
+2. Rename this new sheet to **"Journal Entries"**
+
+3. Go to **File** → **Import**
+
+4. Click the **Upload** tab
+
+5. Click **Browse** and select **`journal_entries.csv`** from:
+   ```
+   /Users/rohenp/robot-lions-website/journal_entries.csv
+   ```
+
+6. In the import dialog:
+   - **Import location**: Select "Replace current sheet"
+   - **Separator type**: Comma
+   - **Convert text to numbers, dates, and formulas**: Yes (checked)
+
+7. Click **Import data**
+
+### Step 5: Verify the Data
 
 **Check that:**
 - ✅ "Upcoming Events" sheet has 2 events (Jan 25, Mar 1)
 - ✅ "Past Events" sheet has 21 events (Feb 22 back to Sep 7)
-- ✅ All columns are present: Date, Title, Location, Time, Agenda, Notes
+- ✅ "Journal Entries" sheet has 19 entries (Aug 31, 2024 to Feb 22, 2026)
+- ✅ All columns are present in each sheet
 - ✅ Data looks correct (no weird formatting)
 
-### Step 5: Make It Public
+### Step 7: Make It Public
 
 1. Click the **Share** button (top right)
 2. Change to **"Anyone with the link"**
@@ -74,7 +101,7 @@ I've exported your current schedule into two CSV files that you can directly imp
 4. Click **Copy link** and save it
 5. Click **Done**
 
-### Step 6: Get Your Spreadsheet ID
+### Step 8: Get Your Spreadsheet ID
 
 From the URL, copy the Spreadsheet ID:
 
@@ -100,9 +127,18 @@ Your CSV files are in:
 ```
 /Users/rohenp/robot-lions-website/upcoming_events.csv
 /Users/rohenp/robot-lions-website/past_events.csv
+/Users/rohenp/robot-lions-website/journal_entries.csv
 ```
 
 You can also open them in Excel, Numbers, or any spreadsheet program if you want to review before importing.
+
+## Spreadsheet Structure Summary
+
+After importing all three files, your Google Sheet should have **3 sheets**:
+
+1. **"Upcoming Events"** - Columns: Date | Title | Location | Time | Agenda | Notes
+2. **"Past Events"** - Columns: Date | Title | Location | Time | Agenda | Notes
+3. **"Journal Entries"** - Columns: Date | Title | Content | Image URL
 
 ---
 
@@ -125,6 +161,21 @@ Once imported, you can make it look nicer:
    - Click border icon in toolbar
    - Choose "All borders"
 
+## Adding New Journal Entries
+
+To add new journal entries to your Google Sheet:
+
+1. Open the **"Journal Entries"** sheet
+2. Add a new row at the **top** (insert row above row 2)
+3. Fill in:
+   - **Date**: e.g., "March 8, 2026"
+   - **Title**: e.g., "Competition Preparation"
+   - **Content**: Your journal entry text
+   - **Image URL**: (optional) Path to image like `images/photo.jpg` or leave blank
+4. Save and wait 5 minutes for the website to update
+
+**Note:** Journal entries are displayed in **reverse chronological order** (newest first) on the website automatically.
+
 ---
 
-That's it! Your schedule data is now in Google Sheets and ready to use with the website. 🎉
+That's it! Your schedule and journal data are now in Google Sheets and ready to use with the website. 🎉
